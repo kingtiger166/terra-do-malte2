@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+
+body {
+    background: #1e7249;
+    overflow-x: hidden;
+}
+
+.cabecalho {
+
+    background: linear-gradient(135deg, #0d3120 0%, #1e7249 100%);
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 1%; 
+    position: sticky; /* Posicionamento fixo na rolagem */
+    top: 0; /* Fixa ao topo */
+    z-index: 1000; /* Índice Z alto para permanecer no topo */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 0px;   
+
+}
+
+.menunav {
+    display: flex;
+    align-items: center;
+    list-style: none; 
+    text-decoration: none;
+    gap: 20px;
+
+}
+
+.sobre {
+    background-image: url('./Imagens/foto\ fundo\ sobre.png');
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    padding: 150px;
+    align-items: center;
+}
+
+.intern-text {
+    color: #ffffff;
+    width: 90%; 
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  
+
+}
