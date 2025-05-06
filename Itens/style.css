@@ -33,7 +33,7 @@ body {
     list-style: none; 
     text-decoration: none;
     gap: 20px;
-
+    padding: 5px 1%; 
 }
 
 .sobre {
@@ -52,4 +52,12 @@ body {
     border-radius: 10px;
   
 
+}
+
+.carrocel {
+    height: 50%;
+}
+
+.carousel-inner {
+    height: 50%;
 }
