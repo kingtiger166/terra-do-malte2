@@ -42,7 +42,6 @@ body {
     background-size: cover;
     padding: 150px;
     align-items: center;
-    padding-bottom: 40px;
 }
 
 .intern-text {
@@ -56,6 +55,7 @@ body {
 }
 
 .carrocel {
+    padding-top: 50px;
     height: 50%;
 }
 
