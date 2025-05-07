@@ -19,9 +19,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 5px 1%; 
-    position: sticky; /* Posicionamento fixo na rolagem */
-    top: 0; /* Fixa ao topo */
-    z-index: 1000; /* Índice Z alto para permanecer no topo */
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border: 0px;   
 
@@ -55,8 +55,8 @@ body {
 }
 
 .carrocel {
-    padding-top: 50px;
-    height: 50%;
+    padding-top: 0px;
+    padding: 350px;
 }
 
 .carousel-inner {
