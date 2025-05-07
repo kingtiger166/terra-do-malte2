@@ -42,6 +42,7 @@ body {
     background-size: cover;
     padding: 150px;
     align-items: center;
+    padding-bottom: 40px;
 }
 
 .intern-text {
