@@ -7,8 +7,9 @@
 
 
 body {
-    background: #1e7249;
+    background-color: #1e7249;
     overflow-x: hidden;
+    color: #ffffff;
 }
 
 .cabecalho {
@@ -51,14 +52,14 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
   
-
 }
 
+
 .carrocel {
-    padding-top: 0px;
-    padding: 350px;
+    padding: 150px;
 }
 
 .carousel-inner {
     height: 50%;
 }
+
