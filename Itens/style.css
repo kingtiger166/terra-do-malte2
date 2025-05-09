@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 1%; 
+    padding: 20px 1%; 
     position: sticky;
     top: 0;
     z-index: 1000; 
@@ -29,6 +29,8 @@ body {
 }
 
 .menunav {
+
+    color: black;
     display: flex;
     align-items: center;
     list-style: none; 
@@ -37,7 +39,16 @@ body {
     padding: 5px 1%; 
 }
 
+.back-menu {
+    padding: 10px;
+    text-decoration: #000000;
+    background-color: #ffffff;
+    border-radius: 20px 10px;
+}
+
+
 .sobre {
+ 
     background-image: url('./Imagens/foto\ fundo\ sobre.png');
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     background-size: cover;
@@ -51,6 +62,7 @@ body {
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    align-items: center;
   
 }
 
