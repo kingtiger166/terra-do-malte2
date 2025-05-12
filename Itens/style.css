@@ -3,23 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+
 }
 
 
 body {
-    background-color: #1e7249;
+    background: linear-gradient(130deg, #1e7249 0%, #1e7249 100%);
     overflow-x: hidden;
-    color: #ffffff;
+    color: #000000;
 }
+
 
 .cabecalho {
     
-    background: linear-gradient(135deg, #0d3120 0%, #1e7249 100%);
+    background: linear-gradient(130deg, #0d3120 0%, #1e7249 100%);
     color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 1%; 
+    padding: 20px; 
     position: sticky;
     top: 0;
     z-index: 1000; 
@@ -29,23 +31,25 @@ body {
 }
 
 .menunav {
-
-    color: black;
+    
     display: flex;
     align-items: center;
-    list-style: none; 
-    text-decoration: none;
     gap: 20px;
     padding: 5px 1%; 
+
 }
 
-.back-menu {
-    padding: 10px;
-    text-decoration: #000000;
-    background-color: #ffffff;
-    border-radius: 20px 10px;
+.logo {
+    display: flex;
+    justify-content: space-between;
 }
 
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
 
 .sobre {
     display: flex;
@@ -61,7 +65,7 @@ body {
     color: #ffffff;
     width: 90%; 
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.774);
     border-radius: 10px;
     align-items: center;
   
