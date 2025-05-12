@@ -13,7 +13,7 @@ body {
 }
 
 .cabecalho {
-
+    
     background: linear-gradient(135deg, #0d3120 0%, #1e7249 100%);
     color: #000000;
     display: flex;
@@ -48,15 +48,16 @@ body {
 
 
 .sobre {
- 
+    display: flex;
+    justify-content: center;
     background-image: url('./Imagens/foto\ fundo\ sobre.png');
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     background-size: cover;
     padding: 150px;
-    align-items: center;
 }
 
 .intern-text {
+    text-align: center;
     color: #ffffff;
     width: 90%; 
     padding: 30px;
