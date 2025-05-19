@@ -91,7 +91,25 @@ body {
     height: 50%;
 }
 
+.história-do-malte {
+    background-color: #0d3120;
+    display: flex;
+    text-align: center;
+    padding: 100px;
+
+}
+
 .texto-sobre {
-    justify-content: center;
+    border-radius: 50px;
+    padding: 20px;
+    background-color:#1e7249;
+    color: #000000;
+}
+
+footer {
+
+    color: black;
+    background-color: #0d3120;
+    padding-top: 20px;
 }
 
