@@ -16,7 +16,7 @@ body {
 
 .cabecalho {
     
-    background: linear-gradient(130deg, #0d3120 0%, #1e7249 100%);
+    background: linear-gradient(130deg, #ffffff 0%, #103b27 100%);
     color: #000000;
     display: flex;
     justify-content: space-between;
@@ -108,7 +108,7 @@ body {
 
 footer {
 
-    color: black;
+    color: white;
     background-color: #0d3120;
     padding-top: 20px;
 }
