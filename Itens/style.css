@@ -107,6 +107,12 @@ body {
     color: #000000;
 }
 
+.sobre-nos-texto {
+    display: flex;
+    justify-content: center;
+    color:#ffffff;
+}
+
 footer {
 
     color: white;
