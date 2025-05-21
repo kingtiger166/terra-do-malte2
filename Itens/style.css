@@ -115,10 +115,12 @@ body {
 }
 
 .texto-objetivo {
-    padding: 20px;
+    padding: 50px;
     background-color: #555555;
     border-radius: 50px;
     color: #000000;
+    text-align: center;
+    margin: 100px;
 }
 
 
