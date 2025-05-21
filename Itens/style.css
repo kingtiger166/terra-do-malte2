@@ -108,9 +108,17 @@ body {
     color: #000000;
 }
 
+.objetivo {
+    display: flex;
+    padding: 100px;
+    text-align: center;
+}
+
 .texto-objetivo {
+    padding: 20px;
     background-color: #555555;
     border-radius: 50px;
+    color: #000000;
 }
 
 
