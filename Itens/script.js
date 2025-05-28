@@ -9,3 +9,7 @@ forEach(el => {
 'smooth', block: 'center'});
     });
 });
+
+ScrollReveal().reveal('.intern-text');
+
+
