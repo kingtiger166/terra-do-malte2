@@ -10,9 +10,6 @@ forEach(el => {
     });
 });
 
-ScrollReveal().reveal('.intern-text');
+ScrollReveal().reveal('.revel');
 
-function diminuirFonte() {
-    let tamanhoAtual = parseFloat(getComputedStyle(document.body).fontSize);
-    document.body.style.fontSize = (tamanhoAtual - 2) + "px";
-}
+
