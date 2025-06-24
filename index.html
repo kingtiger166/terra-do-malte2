@@ -1,211 +1,151 @@
-<!doctype html>
-<html lang="pt-br">
 
-  <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terra do Malte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <input type="checkbox" id="toggle-font" hidden>
+  <input type="checkbox" id="toggle-contrast" hidden>
+  <input type="checkbox" id="toggle-accessibility" hidden>
+  <input type="checkbox" id="carousel-play" hidden>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terra do Malte</title>
-    <link rel="stylesheet" href="./Itens/style.css">
+  <!-- Inputs do carrossel -->
+  <input type="radio" name="carousel" id="img1" checked hidden>
+  <input type="radio" name="carousel" id="img2" hidden>
+  <input type="radio" name="carousel" id="img3" hidden>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <div class="acessibilidade-wrapper">
+    <label for="toggle-accessibility" class="accessibility-fixed" aria-label="Menu de acessibilidade">A+</label>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <div class="accessibility-menu hidden">
+      <label for="toggle-font">Aumentar/Diminuir Fonte</label>
+      <label for="toggle-contrast">Alto Contraste</label>
+    </div>
 
-
-  </head>
-
-  <body>
-
-    <header class="cabecalho">
-
-      <div class="logo itens">
-
-        <a href="https://www.sistemafaep.org.br/agrinho"></a>
-        <img class="logo" src="./Itens/Imagens/logo cevada.png" width="70" alt="logo">
-
-
+    <header class="header">
+      <div class="logo">
+        <a href="#inicio"><img src="./Imagens/logo cevada.png" alt="Logo Agrinho" /></a>
       </div>
-
-      <div class="titulo"><h1 class="titulo">TERRA DO MALTE</h1></div>
-
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Botão acessibilidade
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <button class="dropdown-item">Mudar fonte</button>
-          <button class="dropdown-item">Alto contraste</button>
-        </div>
-      </div>
-
-      
-      <nav>
-        <ul class="menunav">
-
-          <a type="button" class="btn btn-outline-light" href="#introduçao">Introdução</a>
-          <a type="button" class="btn btn-outline-light" href="#hdm">Historia do malte</a>
-          <a type="button" class="btn btn-outline-light" href="#obj">Objetivo</a>
-
+      <div class="site-title">TERRA DO MALTE</div>
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle" hidden>
+        <label for="menu-toggle" class="hamburger" aria-label="Abrir menu">☰</label>
+        <ul class="nav-links">
+          <li><a href="#video">Historia</a></li>
+          <li><a href="#quiz">Quizz</a></li>
+          <li><a href="#galeria">Galeria</a></li>
         </ul>
       </nav>
-
     </header>
 
+    <main>
+      <section id="inicio" class="reveal visible">
+        <h1>INTRODUÇÃO</h1>
+        <p>
+          A agronomia desempenha um papel fundamental na economia, impulsionando diversas indústrias de destaque. Entre elas, a 
+          produção de malte se sobressai tanto no cenário nacional quanto internacional,sendo uma das áreas do agronegócio que
+          mais movimenta o mercado e gera oportunidades. Além disso, a qualidade do malte influencia diretamente a experiencia do
+          consumidor final,seja na produção de cervejas artesanais ou em outros produtos derivados, reforçando a importancia dessa
+          indústria no dia a dia das pessoas.
+        </p>
+      </section>
 
-    <section class="introduçao" id="introduçao" tabindex="0">
+      
 
-      <div class="intern-text">
+      <section id="video" class="reveal visible">
+        <h2>Historia: A Cadeia Produtiva do Malte</h2>
+        <div class="video-container">
+          <p>No brasil o malte é em sua maioria produzido na parte sul devido a condiçoes climaticas favoraveis, com a produção vinda da sua maior empresa a Agraria a maior maltaria da america latina mantendo 30% da demanda de malte no brasil conta com sua produção de 360.000t de malte anualmente. A Agrária é uma cooperativa agroindustrial localizada em Guarapuava (PR), com sede no distrito de Entre Rios. Estabelecida em 1951 por imigrantes alemães, alia história a tecnologia de ponta para produção de malte e gestão de excelência.</p>
+        </div>
+      </section>
 
-       <h2 class="revel">INTRODUÇÃO</h2>
+      <section id="quiz" class="reveal visible">
+  <h2>Quiz: Você conhece a jornada do malte?</h2>
 
-        <p>A agronomia desempenha um papel fundamental na economia, impulsionando diversas indústrias de destaque. Entre elas, a produção de malte se sobressai tanto no cenário nacional quanto internacional,sendo uma das áreas do agronegócio que mais movimenta o mercado e gera oportunidades. Além disso, a qualidade do malte influencia diretamente a experiencia do consumidor final,seja na produção de cervejas artesanais ou em outros produtos derivados, reforçando a importancia dessa indústria no dia a dia das pessoas.</p>
+  <!-- Caixa de Controle -->
+  <input type="checkbox" id="quiz-toggle" hidden>
 
-  <script>
-		ScrollReveal().reveal('.introduçao');
-	</script>
-
-      </div>
-
-    </section>
-
-<section class="carrocel">
-
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active" >
-        <img class="d-block w-100" src="./Itens/Imagens/campo de cevada pxhere.com.jpg" alt="Primeiro Slide" height="400" >
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./Itens/Imagens/silos.jpg" alt="Segundo Slide" height="400">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./Itens/Imagens/caminhão.jpg" alt="Terceiro Slide" height="400" >
-      </div>
+  <form class="quiz-form">
+    <div class="quiz-question">
+      <p>1. Qual é a primeira etapa na produção do malte?</p>
+      <label><input type="radio" name="q1" required> Secagem</label>
+      <label><input type="radio" name="q1"> Embebição</label>
+      <label><input type="radio" name="q1"> Germinação</label>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Próximo</span>
-    </a>
+
+    <div class="quiz-question">
+      <p>2. Qual a principal função do malte?</p>
+      <label><input type="radio" name="q2" required> Fabricação de cerveja</label>
+      <label><input type="radio" name="q2"> Construção civil</label>
+      <label><input type="radio" name="q2"> Fabricação de roupas</label>
+    </div>
+
+    <div class="quiz-question">
+      <p>3. Qual cidade é sede da Agraria?</p>
+      <label><input type="radio" name="q3" required> Guarapuava</label>
+      <label><input type="radio" name="q3"> Curitiba</label>
+      <label><input type="radio" name="q3"> Entre Rios</label>
+    </div>
+
+    <label for="quiz-toggle" class="quiz-submit-btn">Enviar</label>
+  </form>
+
+  <div class="quiz-result">
+    <p>Obrigado por participar! 🚜🌾 <a href="https://www.agraria.com.br/malte">saiba mais</a></p>
   </div>
-
-</section>
-
-<section class="história-do-malte" id="hdm" tabindex="0">
-
-  <div class="texto-sobre">
-
-    <h2 class="titulo-história-do-malte">HISTORIA DO MALTE</h2>
-
-    <p> No brasil o malte é em sua maioria produzido na parte sul devido a condiçoes climaticas favoraveis, com a produção vinda da sua maior empresa a Agraria a maior maltaria da america latina mantendo 30% da demanda de malte no brasil conta com sua produção de 360.000t de malte anualmente. A Agrária é uma cooperativa agroindustrial localizada em Guarapuava (PR), com sede no distrito de Entre Rios. Estabelecida em 1951 por imigrantes alemães, alia história a tecnologia de ponta para produção de malte e gestão de excelência.  </p>
-    <p>(<a href="https://www.agraria.com.br/malte">Site da Agraria</a>)</p>
-
-      <script>
-		ScrollReveal().reveal('.história-do-malte');
-	</script>
-
-  </div>
-
 </section>
 
 
-<section class="Objetivo" id="obj" tabindex="0">
+  <section id="galeria" class="reveal visible">
+        <h2>Galeria</h2>
+        <div class="carousel-container">
+          <label for="img3" class="carousel-btn control-prev img1">◄</label>
+          <label for="img1" class="carousel-btn control-prev img2">◄</label>
+          <label for="img2" class="carousel-btn control-prev img3">◄</label>
 
-  <div class="texto-objetivo">
+          <div class="carousel-wrapper">
+            <div class="carousel-slide">
+              <div class="carousel-images">
+                <img src="./Imagens/campo de cevada pxhere.com.jpg" alt="Campo">
+                <img src="./Imagens/caminhão.jpg" alt="Malte">
+                <img src="./Imagens/silos.jpg" alt="Cidade">
+              </div>
+            </div>
+          </div>
 
-    <h2 class="titulo-objetivo">OBJETIVO</h2>
+          <label for="img2" class="carousel-btn control-next img1">►</label>
+          <label for="img3" class="carousel-btn control-next img2">►</label>
+          <label for="img1" class="carousel-btn control-next img3">►</label>
+        </div>
 
-    <p>A comunidade consumidora de malte é global. Compreender a importância agronômica para garantir a produção e qualidade do malte é essencial tanto para produtores quanto para consumidores. Esse conhecimento possibilita melhorias na produção e valoriza os produtos, assegurando um mercado sustentável e eficiente.</p>
+        <div class="carousel-controls">
+          <label for="carousel-play" class="carousel-btn">▶⏸</label>
+        </div>
+      </section>
 
+
+      <section id="contato" class="reveal visible">
+        <h2>Contato</h2>
+        <p>Aluno Responsável: Ezequiel Assis de Paula</p>
+        <p>Email: paula.ezequiel@escola.pr.gov.br</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Concurso Agrinho | Colégio Estadual Professor Pedro Carli</p>
+      <div class="social-links">
+        <a href="https://github.com/kingtiger166" target="_blank">
+          <img src="./Imagens/github.png" alt="GitHub" class="social-icon" >
+        </a>
+        <a href="https://www.instagram.com/schonlopes" target="_blank">
+          <img src="./Imagens/instagram.png" alt="Instagram" class="social-icon" />
+        </a>
+      </div>
+    </footer>
   </div>
-
-  <script>
-		ScrollReveal().reveal('.Objetivo');
-	</script>
-
-</section>
-
-<!--add algo falando sobre oque é o malte sua historia e processos para criação-->
-
-
-<footer class="bg-body-tertiary text-center">
-
-  <!-- Grid container -->
-  <div class="container p-4 pb-0">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-     
-      <h3 class="sobre-nos-texto">SOBRE NOS</h3>
-
-      <!-- Google -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        href="email.html"
-        role="button"
-        tabindex="0"
-        ><i class="fab fa-google"></i
-      ><img src="./Itens/Imagens/google.png" width="25px"></a>
-
-      <!-- Instagram -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        href="#!"
-        role="button"
-        tabindex="0"
-        ><i></i><img src="./Itens/Imagens/instagram.png" width="25px"></a>
-
-    
-      <!-- Github -->
-      <a
-        data-mdb-ripple-init
-        class="btn text-white btn-floating m-1"
-        href="https://github.com/kingtiger166"
-        role="button"
-        tabindex="0"
-        ><i></i><img src="./Itens/Imagens/github.png" width="25px"></a>
-
-
-    </section>
-    <!-- Section: Social media -->
-  </div>
-  <!-- Grid container -->
-
-  <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.432);" tabindex="0">
-    © 2025 Copyright by: Ezequiel
-
-
-
-</footer>
-
-
-
-
-
-  </body>
-
+</body>
 </html>
-
-  <!--  <a class="text-body" href="https://mdbootstrap.com/" style="color: #4272DB">MDBootstrap.com</a>
-    <a class="text-body" href="https://pxhere.com/pt/photo/1624531" style="color: #4272DB;">IlyaYurukin</a>
-  </div>
-  -->
